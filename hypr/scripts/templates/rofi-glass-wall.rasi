@@ -1,0 +1,112 @@
+
+
+* {
+    font:   "Caskaydia Mono Nerd Font Mono 12";
+
+    bg0:     #{{ color2.hex }}60;
+    bg1:     #{{ color2.hex }}60;
+    fg0:     #{{ color1.hex }}60;
+
+    accent-color:     #{{ color1.hex }}d0;
+    urgent-color:     #{{ color4.hex }}60;
+
+    background-color:   transparent;
+    text-color:         @fg0;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    border: 3px;
+    border-color: @accent-color;
+    padding: 20px;
+    location:   center;
+    width:      53%;
+    height:      73%;
+    border-radius: 20px;
+
+    background-color:   @bg0;
+}
+
+inputbar {
+    spacing:    10px;
+    padding:    10px;
+    display: none;
+    border-radius: 20px;
+
+    background-color:   @bg1;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+textbox {
+    padding:            10px;
+    background-color:   @bg1;
+}
+
+listview {
+    padding:    5px;
+    lines:      2;
+    columns:    3;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    0px;
+    margin: 0px 10px 0px 10px;
+    spacing:    0px;
+}
+
+element normal normal {
+    text-color: @fg0;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element alternate active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @bg0;
+    border-radius: 50px;
+}
+
+element selected normal, element selected active {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
+}
+
+element-icon {
+    size:   325px;
+    height: 50%;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: transparent;
+    display: none;
+    background-color: transparent;
+    width: 0px;
+    margin: 0;
+    padding: 0;
+}

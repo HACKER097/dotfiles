@@ -1,0 +1,159 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #{{ color1.hex }};
+}
+
+@keyframes bounce-font {
+    from {
+        padding: 0px;
+    }
+
+    to {
+        padding: 0px 5px;
+    }
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #{{ color4.hex }};
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #{{ color1.hex }};
+    animation-name: bounce-font;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-out;
+}
+
+#workspaces button.focused {
+    color: #{{ color4.hex }};
+    background: #eba0ac;
+    border-radius: 10px;
+    animation-name: bounce-font;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-out;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #{{ color1.hex }};
+    color: #11111b; 
+    border-radius: 10px;
+}
+
+#window,
+#battery,
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#backlight {
+    background: alpha(#{{ color2.hex }}, 0.6);
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+    /* border: 2px dashed #{{ color1.hex }}; */
+}
+
+#network{
+    color: #{{ color4.hex }};
+    border-radius: 10px 0px 0px 10px;
+}
+
+#backlight {
+    color: #{{ color8.hex }};
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: alpha(#{{ color2.hex }}, 0.6);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#cpu {
+    color: #{{ color7.hex }};
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#memory {
+    color: #{{ color6.hex }};
+    border-radius: 10px 0px 0px 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock.day {
+    color: #{{ color10.hex }};
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 5px
+}
+
+#clock.icon1 {
+    color: #{{ color9.hex }};
+}
+
+#clock.date {
+    color: #{{ color8.hex }};
+}
+
+#clock.icon2 {
+    color: #{{ color7.hex }};
+}
+
+#clock.time {
+    color: #{{ color6.hex }};
+}
+
+#clock.ampm {
+    color: #{{ color5.hex }};
+    border-radius: 0px 10px 10px 00px;
+}
+
+#pulseaudio{
+    color: #{{ color9.hex }};
+}
+
+#pulseaudio.microphone {
+    color: #{{ color10.hex }};
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 5px;
+}
+
+#battery {
+    color:#{{ color5.hex }};
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}

@@ -1,0 +1,383 @@
+/** Global *******************************************/
+*{
+    all: unset;
+    font-family: feather;
+    font-family: Iosevka;
+}
+
+/** Background ***************************************/
+.bg {
+    background-color: #{{ color1.hex }};
+    opacity: 0;
+}
+
+/** Generic window ***********************************/
+.genwin {
+    background-color: rgba({{ color2.rgb-r }}, {{ color2.rgb-g }}, {{ color2.rgb-b }}, 0.6);
+    border-radius: 16px;
+}
+
+/** Profile ******************************************/
+.face {
+    background-size: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    margin: 65px 0px 0px 0px;
+    border-radius: 100%;
+}
+
+.fullname {
+    color: #{{ color3.hex }};
+    font-size : 30px;
+    font-weight : bold;
+}
+
+.username {
+    color: #{{ color4.hex }};
+    font-size : 22px;
+    font-weight : bold;
+    margin : -15px 0px 0px 0px;
+}
+
+/** System ********************************************/
+.iconcpu, .iconmem, .iconbright, .iconbat {
+    font-size : 32px;
+    font-weight : normal;
+}
+.iconcpu {
+    color: #{{ color5.hex }};
+}
+.iconmem {
+    color: #{{ color6.hex }};
+}
+.iconbright {
+    color: #{{ color6.hex }};
+}
+.iconbat {
+    color: #{{ color7.hex }};
+}
+
+.cpu_bar, .mem_bar, .bright_bar, .bat_bar, scale trough {
+    all: unset;
+    background-color: #{{ color16.hex }};
+    border-radius: 16px;
+    min-height: 28px;
+    min-width: 240px;
+}
+
+.cpu_bar, .mem_bar, .bright_bar, .bat_bar, scale trough highlight {
+    all: unset;
+    border-radius: 16px;
+}
+
+.cpu_bar scale trough highlight {
+    background-color: #{{ color3.hex }};
+}
+.mem_bar scale trough highlight {
+    background-color: #{{ color4.hex }};
+}
+.bright_bar scale trough highlight {
+    background-color: #{{ color4.hex }};
+}
+.bat_bar scale trough highlight {
+    background-color: #{{ color3.hex }};
+}
+
+/** Clock ********************************************/
+.time_hour, .time_min {
+    color: #{{ color4.hex }};
+    font-size : 70px;
+    font-weight : bold;
+}
+.time_hour {
+    margin : 15px 0px 0px 20px;
+}
+.time_min {
+    margin : 0px 0px 10px 0px;
+}
+
+.time_mer {
+    color: #{{ color3.hex }};
+    font-size : 40px;
+    font-weight : bold;
+    margin : 20px 0px 0px 0px;
+}
+
+.time_day {
+    color: #{{ color1.hex }};
+    font-size : 30px;
+    font-weight : normal;
+    margin : 0px 0px 20px -20px;
+}
+
+/** Uptime ********************************************/
+.icontimer {
+    color: #{{ color7.hex }};
+    font-size : 90px;
+    font-weight : normal;
+}
+
+.uphour {
+    color: #{{ color8.hex }};
+    font-size : 42px;
+    font-weight : bold;
+}
+
+.upmin {
+    color: #{{ color8.hex }};
+    font-size : 32px;
+    font-weight : bold;
+}
+
+/** Music ***************************************/
+.album_art {
+    background-size: 240px;
+	opacity: 0.2;
+    min-height: 240px;
+    min-width: 240px;
+    margin: 20px;
+    border-radius: 14px;
+}
+
+.song {
+    color: #{{ color4.hex }};
+    font-size : 24px;
+    font-weight : bold;
+    margin : 40px 0px 0px 0px;
+}
+
+.artist {
+    color: #{{ color1.hex }};
+    font-size : 16px;
+    font-weight : normal;
+    margin : 0px 0px 15px 0px;
+}
+
+.btn_prev, .btn_play, .btn_next {
+    font-family: Iosevka Nerd Font;
+}
+.btn_prev {
+    color: #{{ color6.hex }};
+    font-size : 32px;
+    font-weight : normal;
+}
+.btn_play {
+    color: #{{ color6.hex }};
+    font-size : 48px;
+    font-weight : bold;
+}
+.btn_next {
+    color: #{{ color6.hex }};
+    font-size : 32px;
+    font-weight : normal;
+}
+
+.music_bar scale trough highlight {
+    all: unset;
+    background-color: #{{ color7.hex }};
+    border-radius: 8px;
+}
+.music_bar scale trough {
+    all: unset;
+    background-color: #{{ color8.hex }};
+    border-radius: 8px;
+    min-height: 20px;
+    min-width: 310px;
+    margin : 10px 0px 0px 0px;
+}
+
+/** Weather ***************************************/
+.iconweather {
+    font-family: Iosevka Nerd Font;
+    font-size : 120px;
+    font-weight : normal;
+    margin : 15px 0px 0px 30px;
+}
+
+.label_temp {
+    color : #{{ color1.hex }};
+    font-size : 80px;
+    font-weight : bold;
+    margin : -15px 30px 0px 0px;
+}
+
+.label_stat {
+    color : #{{ color3.hex }};
+    font-size : 38px;
+    font-weight : bold;
+}
+
+.label_quote {
+    color : #{{ color4.hex }};
+    font-size : 18px;
+    font-weight : normal;
+}
+
+/** Applications ***************************************/
+.appbox {
+    margin : 15px 0px 0px 25px;
+}
+
+.app_fox, .app_telegram, .app_discord, .app_terminal,
+.app_files, .app_geany, .app_code, .app_gimp, .app_vbox {
+    background-repeat: no-repeat;
+    background-size: 64px;
+    min-height: 64px;
+    min-width: 64px;
+    margin: 8px 8px 0px 8px;
+	opacity: 0.6;
+}
+
+.app_fox {}
+.app_telegram {}
+.app_discord {}
+.app_terminal {}
+.app_files {}
+.app_geany {}
+.app_code {}
+.app_gimp {}
+.app_vbox {}
+
+/** Links ***************************************/
+.iconweb, .iconmail {
+    color: #{{ color4.hex }};
+    font-family: Iosevka Nerd Font;
+    font-size : 70px;
+    font-weight : normal;
+}
+
+.iconmail {
+    color: #{{ color1.hex }};
+}
+
+.github {
+    background-color: rgba({{ color14.rgb-r }}, {{ color14.rgb-g }}, {{ color14.rgb-b }}, 0.2);
+    border-radius: 16px;
+}
+
+.reddit {
+    background-color: rgba({{ color15.rgb-r }}, {{ color15.rgb-g }}, {{ color15.rgb-b }}, 0.2);
+    border-radius: 16px;
+}
+
+.twitter {
+    background-color: rgba({{ color16.rgb-r }}, {{ color16.rgb-g }}, {{ color16.rgb-b }}, 0.2);
+    border-radius: 16px;
+}
+
+.youtube {
+    background-color: rgba({{ color13.rgb-r }}, {{ color13.rgb-g }}, {{ color13.rgb-b }}, 0.2);
+    border-radius: 16px;
+}
+
+.mail {
+    background-color: rgba({{ color12.rgb-r }}, {{ color12.rgb-g }}, {{ color12.rgb-b }}, 0.2);
+    border-radius: 16px;
+}
+
+.mailbox {
+    background-color: rgba({{ color8.rgb-r }}, {{ color8.rgb-g }}, {{ color8.rgb-b }}, 0.2);
+    border-radius: 10px;
+    margin: 48px 0px 48px 0px;
+}
+.label_mails {
+    color: #{{ color3.hex }};
+    font-size : 32px;
+    font-weight : bold;
+    margin: 0px 12px 0px 12px;
+}
+
+/** Power buttons ***************************************/
+.btn_logout, .btn_sleep, .btn_reboot, .btn_poweroff {
+    font-size : 48px;
+    font-weight : bold;
+}
+
+.btn_logout {
+    color: #{{ color5.hex }};
+}
+.btn_sleep {
+    color: #{{ color6.hex }};
+}
+.btn_reboot {
+    color: #{{ color6.hex }};
+}
+.btn_poweroff {
+    color: #{{ color7.hex }};
+}
+
+/** Home folders ***************************************/
+.hddbox {
+    background-color: rgba({{ color8.rgb-r }}, {{ color8.rgb-g }}, {{ color8.rgb-b }}, 0.6);
+    border-radius: 10px;
+    margin : 15px;
+}
+.hddicon {
+    color: #{{ color4.hex }};
+    font-family: Iosevka Nerd Font;
+    font-size : 70px;
+    font-weight : normal;
+    margin : 25px 20px 25px 40px;
+}
+.hdd_label {
+    color: #{{ color8.hex }};
+    font-size : 48px;
+    font-weight : bold;
+    margin : 0px 0px 0px 15px;
+}
+.fs_sep {
+    color: #{{ color2.hex }};
+    font-size : 36px;
+    font-weight : bold;
+}
+
+.iconfolder1, .iconfolder2, .iconfolder3, .iconfolder4, .iconfolder5, .iconfolder6  {
+    font-family: Iosevka Nerd Font;
+    font-size : 32px;
+    font-weight : normal;
+    margin : 0px 0px 0px 75px;
+}
+.iconfolder1 {
+    color: #{{ color5.hex }};
+}
+.iconfolder2 {
+    color: #{{ color6.hex }};
+}
+.iconfolder3 {
+    color: #{{ color6.hex }};
+}
+.iconfolder4 {
+    color: #{{ color4.hex }};
+}
+.iconfolder5 {
+    color: #{{ color7.hex }};
+}
+.iconfolder6 {
+    color: #{{ color7.hex }};
+}
+
+.label_folder1, .label_folder2, .label_folder3, .label_folder4, .label_folder5, .label_folder6  {
+    font-size : 22px;
+    font-weight : normal;
+    margin : 0px 0px 0px 30px;
+}
+.label_folder1 {
+    color: #{{ color5.hex }};
+}
+.label_folder2 {
+    color: #{{ color6.hex }};
+}
+.label_folder3 {
+    color: #{{ color6.hex }};
+}
+.label_folder4 {
+    color: #{{ color4.hex }};
+}
+.label_folder5 {
+    color: #{{ color7.hex }};
+}
+.label_folder6 {
+    color: #{{ color8.hex }};
+}
+
+/** EOF *************************************************/

@@ -1,0 +1,14 @@
+[
+    ["/home/truegav/.config/hypr/scripts/templates/kitty-colors.conf", "/home/truegav/.config/kitty/kitty-colors.conf"],
+    ["/home/truegav/.config/hypr/scripts/templates/hyprland.conf", "/home/truegav/.config/hypr/hyprland.conf"],
+    ["/home/truegav/.config/hypr/scripts/templates/hyprlock.conf", "/home/truegav/.config/hypr/hyprlock.conf"],
+    ["/home/truegav/.config/hypr/scripts/templates/waybar-style.css", "/home/truegav/.config/waybar/style.css"],
+    ["/home/truegav/.config/hypr/scripts/templates/dunst.conf", "/home/truegav/.config/dunst/dunstrc"],
+    ["/home/truegav/.config/hypr/scripts/templates/Nebula-config.css", "/home/truegav/.zen/9ns6qadz.Default (beta)/chrome/Nebula/Nebula-config.css"],
+    ["/home/truegav/.config/hypr/scripts/templates/rofi-glass.rasi","/home/truegav/.local/share/rofi/themes/rofi-glass.rasi"],
+    ["/home/truegav/.config/hypr/scripts/templates/rofi-glass-wall.rasi","/home/truegav/.local/share/rofi/themes/rofi-glass-wall.rasi"],
+    ["/home/truegav/.config/hypr/scripts/templates/eww-dash.scss","/home/truegav/.config/eww/dashboard/eww.scss"],
+    ["/home/truegav/.config/hypr/scripts/templates/colors.vim","/home/truegav/.cache/wal/colors-wal.vim"],
+    ["/home/truegav/.config/hypr/scripts/templates/lush.lua","/home/truegav/.config/nvim/lua/lush_theme/mytheme.lua"],
+    ["/home/truegav/.config/hypr/scripts/templates/mini-hue-colors.lua", "/home/truegav/.config/nvim/lua/minicolors.lua"]
+]
